@@ -23,7 +23,13 @@
   antes de seguir pra próxima. Não pule etapa nem faça várias tasks de uma vez.
 - Se eu sugerir algo fora do escopo da v1 (ver abaixo), me avise e sugira guardar pra V2 em vez
   de simplesmente implementar.
-- No fim de cada task, me lembre de fazer um commit com mensagem clara (ex: "feat: cabeçalho fixo").
+- No fim de cada task, me entregue a **mensagem de commit já pronta**, preenchida com o que
+  foi feito, num bloco pra eu copiar (ex: `git add . && git commit -m "feat: cabeçalho fixo
+  com vidro e links das seções"`). Padrão: `tipo: o que mudou` em português, minúsculo, sem
+  ponto final (tipos: feat, fix, style, refactor, test, docs, chore).
+- O commit sai **só no meu nome**. A assinatura do Claude está desligada em
+  `.claude/settings.json` (`attribution` vazio) — não reativar e não escrever
+  `Co-Authored-By` nem "Generated with" à mão.
 - Mensagem de commit descreve só O QUE mudou e por quê, de forma impessoal (ex: "fix: seta do
   botão não descia no hover"). Nunca citar pessoas ("a pedido do Fabricio", "reportado por...")
   nem colocar assinatura/co-autoria de IA (Co-Authored-By, "Generated with").
