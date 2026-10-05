@@ -173,7 +173,7 @@ cadentes, destaque azul-lavanda, fonte Geist. Fonte da verdade:
 
 - [x] 0. **Projeto e repositório** — `create-next-app` com TypeScript, ESLint, Tailwind,
   App Router; pasta `src/`; repo no GitHub.
-- [ ] 1. **Export estático** — `output: 'export'` e `images.unoptimized` no
+- [x] 1. **Export estático** — `output: 'export'` e `images.unoptimized` no
   `next.config.ts`; conferir `strict` no tsconfig. Validar: `npm run build` gera `out/` e
   `out/` está no `.gitignore`.
 - [ ] 2. **Jest + React Testing Library** — usar `next/jest`, ambiente jsdom, `jest.setup`
