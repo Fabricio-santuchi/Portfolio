@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
 <meta charset="utf-8">
-<title>D · Moderno — Computador</title>
+<title>D · Moderno — Computador (1440)</title>
 <script src="./support.js"></script>
 </head>
 <body>
@@ -262,6 +262,11 @@ h1,h2,h3,p{margin:0}
 .D .ct-soc:hover{border-color:#8FA8FF;transform:translateY(-2px)}
 .D .ct-soc .ico{width:40px;height:40px;border-radius:50%;background:#1E2230;color:#8FA8FF;display:inline-flex;align-items:center;justify-content:center}
 @media (max-width:820px){.D .ct-mail .mono{font-size:13px}.D .ct-card{border-radius:24px}}
+.D .pill{text-decoration:none}
+@media (max-width:1100px) and (min-width:821px){.D .hero{grid-template-columns:minmax(0,1fr);gap:40px}.D .cmdk{max-width:640px}.D .stack-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:820px) and (min-width:600px){.D .facts{grid-template-columns:repeat(3,minmax(0,1fr))}.D .cmdk{max-width:560px}}
+@media (max-width:400px){.D .hero-ctas{flex-direction:column}.D .cta-main,.D .cta-cv{width:100%;justify-content:space-between}.D .ct-actions{flex-direction:column;width:100%}.D .ct-actions > a{justify-content:center}}
+@media (min-width:1700px){.D .wrap{max-width:1360px}}
 @media (max-width:820px){.D .hero{grid-template-columns:minmax(0,1fr);gap:32px}}
 @media (prefers-reduced-motion: reduce){.D .rot span:first-child{transform:none}}
 </style>
@@ -277,7 +282,7 @@ h1,h2,h3,p{margin:0}
 <div class="progress" aria-hidden="true"></div>
 <section id="topo" class="hero wrap">
 <div class="hero-txt">
-<span class="pill"><b>Novo</b> WattCheck está chegando ao ar</span>
+<a class="pill" href="https://wattcheck.santux.com.br"><b>Novo</b> WattCheck está no ar</a>
 <h1>Fabricio Santuchi.<br>Eu crio <span class="rot"><span>produtos.</span><span>APIs.</span><span>interfaces.</span><span>sistemas.</span></span></h1>
 <p class="lead">Desenvolvedor Full-stack Júnior, com foco em front-end. Ferramentas web publicadas, testadas e ligadas a uma API de verdade — do React ao PostgreSQL.</p>
 <div class="ctas hero-ctas">
@@ -301,7 +306,7 @@ h1,h2,h3,p{margin:0}
 <div class="sec-h rv"><p class="eyebrow">01 — Projetos</p><h2 ref="{{t_projetos.ref}}" aria-label="{{t_projetos.full}}"><span aria-hidden="true">{{t_projetos.done}}</span><span class="scr" aria-hidden="true">{{t_projetos.rest}}</span></h2></div>
 <div class="proj-grid">
 <article onMouseMove="{{spot}}" class="spot proj main feat rv">
-<div class="proj-top"><span class="badge live">Lançando</span><span class="mono small">Front-end</span></div>
+<div class="proj-top"><span class="badge live">No ar</span><span class="mono small">Front-end</span></div>
 <h3>WattCheck</h3>
 <p><b>Problema:</b> ninguém sabe quanto o chuveiro ou o ar-condicionado pesa na conta de luz.</p>
 <p><b>Solução:</b> calculadora que mostra o custo por uso, por mês e por ano de cada aparelho, em 8 países e 2 idiomas.</p>
@@ -317,7 +322,7 @@ h1,h2,h3,p{margin:0}
 <p class="fine">Tarifa de exemplo: R$ 0,90 por kWh</p>
 </div>
 </div>
-<div class="proj-links"><a class="btn pri" href="#projetos">Ver site completo [LINK]</a><a class="btn sec" href="https://github.com/Fabricio-santuchi">Código</a></div>
+<div class="proj-links"><a class="btn pri" href="https://wattcheck.santux.com.br">Ver site completo</a><a class="btn sec" href="https://github.com/Fabricio-santuchi">Código</a></div>
 </article>
 <article onMouseMove="{{spot}}" class="spot proj main soon rv">
 <div class="proj-top"><span class="badge soon">Em breve</span><span class="mono small">Back-end</span></div>
@@ -417,7 +422,7 @@ h1,h2,h3,p{margin:0}
 </main>
 </div>
 </x-dc>
-<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":4500}}'>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":4600}}'>
 class Component extends DCLogic {
   constructor(props) {
     super(props);

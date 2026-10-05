@@ -155,7 +155,7 @@ cadentes, destaque azul-lavanda, fonte Geist. Fonte da verdade:
   palavra girando tem `aria-label` com a frase completa.
 - **Playwright (site buildado):** `/` carrega sem erro no console; Ctrl+K foca a busca;
   links das seções rolam até o lugar certo; `/projetos/wattcheck` abre; 404 funciona;
-  sem rolagem lateral em 360, 390, 768 e 1440 px; com `reducedMotion: 'reduce'` nada
+  sem rolagem lateral em 360, 390, 600, 768, 1024, 1280, 1440 e 1920 px; com `reducedMotion: 'reduce'` nada
   fica invisível.
 
 ## TASKS, EM ORDEM (uma por vez, testar antes de avançar)
@@ -241,7 +241,7 @@ cadentes, destaque azul-lavanda, fonte Geist. Fonte da verdade:
 - [ ] 27. **Sitemap, robots, 404 e favicon** — Validar: `out/sitemap.xml` lista as 2 páginas;
   rota inexistente mostra a 404.
 - [ ] 28. **Testes finais** — Playwright completo (ESTRATÉGIA DE TESTES) + sem rolagem
-  lateral nos 4 tamanhos. Validar: CI verde.
+  lateral nos 8 tamanhos (ESPEC §10). Validar: CI verde.
 - [ ] 29. **Deploy** — `wrangler.jsonc` servindo `out/`, deploy automático pelo push,
   domínio `santux.com.br` (+ `www` redirecionando). Validar: abre com HTTPS.
 - [ ] 30. **Search Console + Web Analytics** — enviar sitemap, ativar analytics.

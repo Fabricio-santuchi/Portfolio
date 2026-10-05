@@ -270,10 +270,31 @@ endpoints, log passo a passo e JSON, e luz de status no cabeçalho. Depende da A
 
 ---
 
-## 10. Responsivo (abaixo de 820 px)
-- Links do cabeçalho somem.
-- Abertura em 1 coluna; busca embaixo do texto.
-- Cards de projeto em 1 coluna; campos da prévia continuam lado a lado.
-- Sobre e fatos em 1 coluna; Stack em 2 colunas.
-- Contato: raio 24 px, e-mail 13 px.
-- Testar em **360, 390, 768 e 1440 px**: nada corta, nenhuma rolagem lateral.
+## 10. Responsivo — 8 tamanhos de referência
+
+O canvas mostra a página em todos estes tamanhos. Testar todos no Playwright (sem rolagem
+lateral) e conferir no DevTools.
+
+| Tamanho | Exemplo de aparelho | O que muda |
+|---|---|---|
+| **360 px** | celular pequeno (Android de entrada) | botões da abertura e do contato ocupam a largura toda, um embaixo do outro |
+| **390 px** | celular comum (iPhone, Galaxy) | layout de celular padrão |
+| **600 px** | celular grande / dobrável | fatos do Sobre em 3 colunas; busca até 560 px |
+| **768 px** | tablet em pé | igual ao 600, com mais respiro |
+| **1024 px** | tablet deitado / notebook pequeno | links do cabeçalho voltam; abertura ainda em 1 coluna (busca embaixo, até 640 px); Stack em 2 colunas; projetos lado a lado |
+| **1280 px** | notebook | layout de computador: abertura em 2 colunas, Stack em 4 |
+| **1440 px** | computador | layout de referência |
+| **1920 px** | tela grande | conteúdo centralizado até 1360 px |
+
+Quebras (CSS):
+- `≤ 400px` — botões empilhados em largura total
+- `≤ 820px` — celular/tablet em pé: links do cabeçalho somem; tudo em 1 coluna; Stack em 2
+  colunas; contato com raio 24 px e e-mail 13 px; mapa (V2) na vertical
+- `600–820px` — fatos do Sobre em 3 colunas
+- `821–1100px` — abertura em 1 coluna; Stack em 2 colunas
+- `≥ 1700px` — largura máxima 1360 px
+
+Regras:
+- Nada corta e nenhuma rolagem lateral em nenhum dos 8 tamanhos.
+- Campos da prévia do WattCheck continuam lado a lado mesmo no celular.
+- Texto nunca menor que 12 px; alvos de toque nunca menores que 44 px.
