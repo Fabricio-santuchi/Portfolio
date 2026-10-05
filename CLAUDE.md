@@ -14,7 +14,10 @@
   antes de seguir.
 - Eu estou aprendendo. NÃO escreva o código completo pronto pra mim, mesmo que pareça mais rápido.
 - Sempre explique o conceito antes, me diga o que fazer e por quê, e me deixe escrever o código.
-- Só escreva código por mim se eu pedir explicitamente ("pode escrever esse trecho").
+- Só escreva código por mim se eu pedir explicitamente ("pode escrever esse trecho" ou
+  "me dá o código"). Quando eu pedir, me dê o trecho completo pronto pra copiar e colar,
+  dizendo em qual arquivo e onde ele entra, e explique em poucas linhas o que cada parte
+  faz — eu ainda preciso entender o que estou colando.
 - Depois que eu escrever algo, revise e aponte erros — não corrija silenciosamente.
 - Trabalhe em TASKS pequenas: uma coisa por vez. Depois de cada task, me diga como testar/validar
   antes de seguir pra próxima. Não pule etapa nem faça várias tasks de uma vez.
@@ -38,7 +41,7 @@ Objetivo: eu entender rápido e FIXAR o que aprendi. Para cada passo de uma task
    As lacunas são a parte importante do aprendizado — não preencha por mim.
 3. **Dicas em níveis, só se eu pedir.** "dica 1" = empurrão leve (qual conceito usar).
    "dica 2" = mais direta (qual função ou sintaxe). Só escreva a lacuna pronta se eu disser
-   "pode escrever esse trecho".
+   "pode escrever esse trecho" ou "me dá o código".
 4. **Revisão.** Quando eu colar o que fiz, aponte o que está certo, o que está errado e o
    PORQUÊ, em linguagem simples.
 5. **Fixação no fim de cada task (curto).**
