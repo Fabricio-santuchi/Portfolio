@@ -180,7 +180,7 @@ cadentes, destaque azul-lavanda, fonte Geist. Fonte da verdade:
   com `@testing-library/jest-dom`, um teste bobo. Script `test`. Validar: `npm test` passa.
 - [x] 3. **Playwright** — config rodando contra o `out/` servido localmente (ex: pacote
   `serve`), um teste que abre `/`. Script `test:e2e`. Validar: `npm run test:e2e` passa.
-- [ ] 4. **GitHub Actions** — workflow com lint, `tsc --noEmit`, Jest e build a cada push
+- [x] 4. **GitHub Actions** — workflow com lint, `tsc --noEmit`, Jest e build a cada push
   (gerar os tipos de rota antes do tsc, como no WattCheck). Validar: check verde.
 
 ### Fase 2 — Fundação visual e dados

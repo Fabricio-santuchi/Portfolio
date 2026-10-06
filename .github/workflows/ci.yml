@@ -1,0 +1,36 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      # Baixa o código do repositório pra máquina do GitHub.
+      - uses: actions/checkout@v4
+
+      # Instala o Node e guarda os pacotes em cache pra próxima rodada ser mais rápida.
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - run: npm ci
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Gerar tipos das rotas (next typegen)
+        run: npx next typegen
+
+      - name: Tipos (tsc)
+        run: npx tsc --noEmit
+
+      - name: Testes unitários e de componente (Jest)
+        run: npm run test
+
+      - name: Build (export estático)
+        run: npm run build
