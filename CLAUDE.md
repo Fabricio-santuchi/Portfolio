@@ -178,7 +178,7 @@ cadentes, destaque azul-lavanda, fonte Geist. Fonte da verdade:
   `out/` está no `.gitignore`.
 - [x] 2. **Jest + React Testing Library** — usar `next/jest`, ambiente jsdom, `jest.setup`
   com `@testing-library/jest-dom`, um teste bobo. Script `test`. Validar: `npm test` passa.
-- [ ] 3. **Playwright** — config rodando contra o `out/` servido localmente (ex: pacote
+- [x] 3. **Playwright** — config rodando contra o `out/` servido localmente (ex: pacote
   `serve`), um teste que abre `/`. Script `test:e2e`. Validar: `npm run test:e2e` passa.
 - [ ] 4. **GitHub Actions** — workflow com lint, `tsc --noEmit`, Jest e build a cada push
   (gerar os tipos de rota antes do tsc, como no WattCheck). Validar: check verde.
