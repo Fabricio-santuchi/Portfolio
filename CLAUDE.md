@@ -176,7 +176,7 @@ cadentes, destaque azul-lavanda, fonte Geist. Fonte da verdade:
 - [x] 1. **Export estático** — `output: 'export'` e `images.unoptimized` no
   `next.config.ts`; conferir `strict` no tsconfig. Validar: `npm run build` gera `out/` e
   `out/` está no `.gitignore`.
-- [ ] 2. **Jest + React Testing Library** — usar `next/jest`, ambiente jsdom, `jest.setup`
+- [x] 2. **Jest + React Testing Library** — usar `next/jest`, ambiente jsdom, `jest.setup`
   com `@testing-library/jest-dom`, um teste bobo. Script `test`. Validar: `npm test` passa.
 - [ ] 3. **Playwright** — config rodando contra o `out/` servido localmente (ex: pacote
   `serve`), um teste que abre `/`. Script `test:e2e`. Validar: `npm run test:e2e` passa.
